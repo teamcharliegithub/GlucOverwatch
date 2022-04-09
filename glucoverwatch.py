@@ -41,7 +41,7 @@ print(value)
 
 
 while True:
-    if (value <= 200): # CHANGE TO 70
+    if (value <= 70):
         message = client.messages.create(to=patient, from_=sender, body="Your blood glucose is 70 or below. Reply YES to confirm treatment or reply NO to summon aid from your caregiver.")
         @app.route("/sms", methods=['GET', 'POST'])
 
