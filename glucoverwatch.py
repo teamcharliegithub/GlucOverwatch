@@ -1,9 +1,16 @@
-
 from pydexcom import Dexcom
+from twilio.rest import Client
 import time
+
+# Dexcom Tokens
 username = "brmotta"
-pwd = ""  # Password omitted in repository
+pwd = "3Ko17%g4395zxvI8B8TX"  # Password omitted in repository
 dexcom = Dexcom(username, pwd)
+
+# Twilio Tokens
+account_sid = "AC5e7d47d2b8bfc7c808eba55c706d0d5e"
+auth_token = "" # Token omitted in repository
+client = Client(account_sid, auth_token)
 
 def update():
     bg = dexcom.get_current_glucose_reading()
@@ -13,13 +20,13 @@ def update():
 bg, value, trend = update()
 
 while True:
-    if (bg <= 70):
+    if (value <= 70):
         # Twilio Code Here
         pass
-    elif (bg <= 120 and trend == 7):
+    elif (value <= 120 and trend == 7):
         # Twilio Code Here
         pass
-    elif (bg <= 100 and (trend == 6 or trend == 7)):
+    elif (value <= 100 and (trend == 6 or trend == 7)):
           # Twilio Code Here
           pass
     else:
