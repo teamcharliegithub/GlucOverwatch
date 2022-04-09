@@ -18,13 +18,13 @@ bg, value, trend = update()
 print(bg.value)
 
 while True:
-    if (bg.value <= 70):
+    if (value <= 70):
         # Twilio Code Here
         pass
-    elif (bg.value <= 120 and trend == 7):
+    elif (value <= 120 and trend == 7):
         # Twilio Code Here
         pass
-    elif (bg.value <= 100 and (trend == 6 or trend == 7)):
+    elif (value <= 100 and (trend == 6 or trend == 7)):
         # Twilio Code Here
         pass
     else:
