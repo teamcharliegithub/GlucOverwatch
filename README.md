@@ -1,3 +1,5 @@
+
+![alt text](https://github.com/teamcharliegithub/glucoverwatch/blob/main/glucoverwatch.png "GlucOverwatch Logo")
 # GlucOverwatch
 
 GlucOverwatch is an application that alerts patients and caregivers to hypoglycemia and allows patients to summon aid if necessary.
