@@ -1,15 +1,16 @@
 # GlucOverwatch
 
-GlucOverwatch is an application that helps people with diabetes monitor their blood sugar levels.
+GlucOverwatch is an application that alerts patients and caregivers to hypoglycemia and allows patients to summon aid if necessary.
 
 ## Motivation
 
-In the US alone, there are nearly 2 million people with Type 1 diabetes. This chronic condition causes the pancreas to produce little or no insulin. Therefore, to ensure the patients' safety, the health workers must keep track of their blood sugar levels. In case the level is too low, the caregivers must take immediate action to seek help.
+In the US alone, there are nearly 2 million people with Type 1 diabetes. This chronic condition causes the pancreas to produce little or no insulin, meaning that patients require external insulin to survive. However, external insulin administration can lead to hypoglycemia, or low blood sugar, a potentially life-threatening condition which requires immediate treatment.
 
-The biomedical companies have already developed devices to track the blood sugar level every few minutes. However, there still lacks a service to notify the health workers of any urgent situation. Hence, if a patient's blood sugar suddenly drops significantly, there is no viable way to inform the caregivers.
+Glucose monitoring companies have already developed devices to track blood glucose levels continuously, as well as services that allow caregivers to monitor blood glucose trends in real-time. However, there remains a lack of services that allow patient and caregiver to communicate treatment of hypoglycemia or the need for assistance. 
+
 
 ## Solution
 
-We want to solve this problem. Thus, we build GlucOverwatch, a computer program that monitors the data output from the glucose monitor device. 
+GlucOverwatch monitors blood glucose values continuously. When low blood glucose is detected, the program sends an SMS message to the patient, asking whether the patient has treated or is in need of aid. If the patient has treated, the program will send an SMS message to a caregiver informing them of treatment; if the patient requests aid, the caregiver will receive a message informing them that their patient requires assistance as soon as possible.
 
-GlucOverwatch includes a Python program, which sends API requests every 6 minutes to the glucose monitor hardware. Thus, it can get up-to-date data about the user's glucose level. If there are any significant changes, the app will send notifications to the patients and their caregivers, so they can stay informed of the situation.
+**GlucOverwatch is not currently functional due to issues with Flask**
