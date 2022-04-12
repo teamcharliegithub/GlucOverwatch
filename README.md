@@ -13,4 +13,4 @@ Glucose monitoring companies have already developed devices to track blood gluco
 
 GlucOverwatch monitors blood glucose values continuously. When low blood glucose is detected, the program sends an SMS message to the patient, asking whether the patient has treated or is in need of aid. If the patient has treated, the program will send an SMS message to a caregiver informing them of treatment; if the patient requests aid, the caregiver will receive a message informing them that their patient requires assistance as soon as possible.
 
-**GlucOverwatch is not currently functional due to issues with Flask**
+**GlucOverwatch is not currently functional due to issues with Flask.**
